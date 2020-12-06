@@ -1,4 +1,5 @@
 import React from 'react';
+import { TodoList } from "./components/TodoList"
 
 // function App() {
 //   return (
@@ -7,7 +8,12 @@ import React from 'react';
 // }
 
 const App: React.FC = () => {
-  return <div className="App"></div>
+  const todos = [{id: "T1", text: "TSの練習"}];
+  return (
+    <div className="App">
+      <TodoList items={todos} />
+    </div>
+  )
 }
 
 export default App;
